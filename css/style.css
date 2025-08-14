@@ -81,7 +81,6 @@ body {
   overflow: hidden;
 }
 
-/* ===== Scrollbar (WebKit + Firefox) ===== */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--scroll) var(--scroll-bg);
@@ -123,9 +122,6 @@ body {
   font-weight: 800;
 }
 
-/* =========================
-   Loader
-   ========================= */
 #initial-bg-top,
 #initial-bg-bottom {
   position: fixed;
@@ -199,9 +195,6 @@ body {
   width: 100%;
 }
 
-/* =========================
-   Background stars
-   ========================= */
 #stars {
   position: fixed;
   inset: 0;
@@ -212,9 +205,6 @@ body {
   transition: opacity 1.5s ease;
 }
 
-/* =========================
-   NAV (escopada)
-   ========================= */
 header>nav {
   position: fixed;
   top: 0;
@@ -268,9 +258,6 @@ header>nav ul li:hover::after {
   width: 100%;
 }
 
-/* =========================
-   Hero
-   ========================= */
 #hero {
   height: 100vh;
   position: relative;
@@ -350,9 +337,6 @@ header>nav ul li:hover::after {
   box-shadow: var(--shadow-hero-hover);
 }
 
-/* =========================
-   Modal / Overlay
-   ========================= */
 .no-scroll {
   overflow: hidden;
 }
@@ -440,9 +424,6 @@ header>nav ul li:hover::after {
   }
 }
 
-/* =========================
-   Scroll down
-   ========================= */
 #scroll-down {
   position: absolute;
   bottom: 30px;
@@ -493,9 +474,6 @@ header>nav ul li:hover::after {
   }
 }
 
-/* =========================
-   Rotating BG
-   ========================= */
 #rotating-bg {
   position: absolute;
   top: 50%;
@@ -522,9 +500,6 @@ header>nav ul li:hover::after {
   }
 }
 
-/* =========================
-   Rocket cursor
-   ========================= */
 #rocket-cursor {
   position: fixed;
   top: 0;
@@ -537,9 +512,6 @@ header>nav ul li:hover::after {
   transition: transform .1s ease-out;
 }
 
-/* =========================
-   ABOUT
-   ========================= */
 #about {
   padding: 60px 20px;
   background: var(--bg-alt);
@@ -659,9 +631,6 @@ header>nav ul li:hover::after {
   transition: transform .3s ease;
 }
 
-/* =========================
-   SKILLS
-   ========================= */
 #skills {
   padding: 60px 20px;
   background: transparent;
@@ -856,7 +825,6 @@ header>nav ul li:hover::after {
   flex-shrink: 0;
 }
 
-/* back header / lightbox layouts */
 .skill-back-header {
   width: 100%;
   display: flex;
@@ -904,7 +872,6 @@ header>nav ul li:hover::after {
   margin: 0 auto 8px;
 }
 
-/* Badges níveis */
 .level-badge {
   display: inline-block;
   font-size: .7rem;
@@ -931,7 +898,6 @@ header>nav ul li:hover::after {
   background: var(--level-a-explorar);
 }
 
-/* Lightbox controls */
 #lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -996,7 +962,6 @@ header>nav ul li:hover::after {
   height: 22px;
 }
 
-/* Clone central */
 .skill-card-clone {
   position: fixed;
   z-index: 3001;
@@ -1024,9 +989,6 @@ header>nav ul li:hover::after {
   border-radius: 14px;
 }
 
-/* =========================
-   EXPERIENCE / TIMELINE
-   ========================= */
 #experience {
   padding: 60px 20px;
   background: var(--bg-dark);
@@ -1252,19 +1214,28 @@ header>nav ul li:hover::after {
 .view-cv-container {
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.view-cv-btn {
+.view-cv-btn,
+.download-cv-btn {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  background: linear-gradient(90deg, #0077b5, #005582);
-  color: var(--text-color);
   font-weight: 600;
   padding: .75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   transition: transform .2s ease, box-shadow .2s ease;
+  min-width: 220px;
+  justify-content: center;
+}
+
+.view-cv-btn {
+  background: linear-gradient(90deg, #0077b5, #005582);
+  color: var(--text-color);
 }
 
 .view-cv-btn:hover {
@@ -1272,14 +1243,22 @@ header>nav ul li:hover::after {
   box-shadow: 0 4px 15px rgba(0, 119, 181, .4);
 }
 
-.linkedin-icon {
+.download-cv-btn {
+  background: linear-gradient(90deg, #B026FF, #8B1DBF);
+  color: var(--text-color);
+}
+
+.download-cv-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(176, 38, 255, .4);
+}
+
+.linkedin-icon,
+.download-icon {
   width: 20px;
   height: 20px;
 }
 
-/* =========================
-   BRANDS
-   ========================= */
 #brands {
   padding: 60px 20px;
   background: transparent;
@@ -1352,9 +1331,6 @@ header>nav ul li:hover::after {
   }
 }
 
-/* =========================
-   CONTATO
-   ========================= */
 #contact {
   padding: 60px 20px;
   background: var(--bg-contact);
@@ -1465,7 +1441,6 @@ header>nav ul li:hover::after {
   text-decoration: underline;
 }
 
-/* grid 3 colunas */
 .contact-list li {
   grid-template-columns: 44px 1fr auto;
 }
@@ -1481,7 +1456,6 @@ header>nav ul li:hover::after {
   text-overflow: ellipsis;
 }
 
-/* Copy button */
 .copy-btn {
   background: none;
   border: none;
@@ -1518,7 +1492,6 @@ header>nav ul li:hover::after {
   }
 }
 
-/* Form */
 .contact-form {
   background: var(--white-rgba-06);
   border: 1px solid var(--white-rgba-10);
@@ -1616,9 +1589,6 @@ textarea:focus {
   font-weight: 600;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
 #site-footer {
   background: var(--bg-footer);
   border-top: 1px solid var(--white-rgba-08);
@@ -1718,9 +1688,6 @@ textarea:focus {
   box-shadow: 0 0 20px rgba(211, 102, 255, .6);
 }
 
-/* =========================
-   Responsive tweaks
-   ========================= */
 @media (max-width:900px) {
   .timeline::before {
     left: 28px;
@@ -1746,9 +1713,6 @@ textarea:focus {
   }
 }
 
-/* =========================
-   Game / Enemies
-   ========================= */
 .enemy {
   position: absolute;
   width: 20px;
@@ -1846,5 +1810,19 @@ textarea:focus {
 
 #toggle-game-btn {
   display: none;
+  position: fixed;
+  right: 14px;
+  top: 14px;
+  z-index: 10001;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  background: #B026FF;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(176, 38, 255, .35);
 }
-

@@ -6,8 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="Site pessoal de Christopher Lepikson, analista de dados com foco em Power BI, SQL e visualização de dados." />
+  <meta property="og:title" content="Portfólio de Christopher Lepikson" />
+  <meta property="og:description" content="Analista de Dados | Especialista em Power BI, SQL e visualização de dados." />
+  <meta property="og:url" content="https://christopherlepikson.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://seudominio.com/imagem-compartilhamento.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <title>Christopher Lepikson</title>
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/logos/foguete.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
@@ -15,24 +22,18 @@
 </head>
 
 <body>
-
-  <!-- Fundo espaço sideral -->
   <div id="stars"></div>
 
-  <!-- Fundo roxo vibrante dividido horizontal (loader) -->
   <div id="initial-bg-top"></div>
   <div id="initial-bg-bottom"></div>
 
-  <!-- Texto de carregamento -->
   <div id="loading-text">
     <div class="title">Indo para o meu universo...</div>
     <div class="copyright">Christopher Lepikson © 2025</div>
   </div>
 
-  <!-- Contador -->
   <div id="loading-counter">0%</div>
 
-  <!-- Loader linha -->
   <div id="loader" aria-label="Carregando"></div>
 
   <header>
@@ -52,8 +53,6 @@
 
   <main>
 
-
-    <!-- Hero Section -->
     <section id="hero">
       <div id="rotating-bg"></div>
       <div class="hero-content">
@@ -74,7 +73,6 @@
       </div>
     </section>
 
-    <!-- Overlay / Popup -->
     <div id="overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title" hidden>
       <div id="popup" tabindex="-1">
         <button id="fechar" aria-label="Fechar aviso">&times;</button>
@@ -83,7 +81,6 @@
       </div>
     </div>
 
-    <!-- Seção Sobre Mim -->
     <section id="about">
       <div class="about-container">
         <div class="about-left">
@@ -120,10 +117,8 @@
         </h2>
         <p class="experience-subtitle">Conheça minhas principais experiências, prêmios e formação.</p>
 
-        <!-- ===== EXPERIÊNCIA PROFISSIONAL (com foguete) ===== -->
         <h3 class="timeline-group-title">Experiência Profissional</h3>
         <ol class="timeline" role="list">
-          <!-- Foguete percorrendo a linha -->
           <div class="timeline-rocket" aria-hidden="true">
             <svg viewBox="0 0 64 64" class="rocket-svg" xmlns="http://www.w3.org/2000/svg">
               <path d="M32 2L40 22L32 62L24 22L32 2Z" fill="#B026FF" stroke="#8B1DBF" stroke-width="2" />
@@ -134,7 +129,6 @@
             </svg>
           </div>
 
-          <!-- Flywheel Digital (consolidado com promoções) -->
           <li class="timeline-item">
             <article class="timeline-card">
               <header class="timeline-header">
@@ -159,7 +153,6 @@
             </article>
           </li>
 
-          <!-- EGA Solutions -->
           <li class="timeline-item">
             <article class="timeline-card">
               <header class="timeline-header">
@@ -176,7 +169,6 @@
             </article>
           </li>
 
-          <!-- Estágio anterior -->
           <li class="timeline-item">
             <article class="timeline-card">
               <header class="timeline-header">
@@ -195,7 +187,6 @@
           </li>
         </ol>
 
-        <!-- ===== PRÊMIOS E RECONHECIMENTOS ===== -->
         <h3 class="timeline-group-title">Prêmios & Reconhecimentos</h3>
         <div class="list-cards" role="list">
           <article class="mini-card" role="listitem">
@@ -223,7 +214,6 @@
           </article>
         </div>
 
-        <!-- ===== FORMAÇÃO ACADÊMICA ===== -->
         <h3 class="timeline-group-title">Formação Acadêmica</h3>
         <div class="list-cards" role="list">
           <article class="mini-card" role="listitem">
@@ -248,18 +238,20 @@
             </ul>
           </article>
         </div>
-        <!-- ===== BOTÃO VER CURRÍCULO COMPLETO ===== -->
+
         <div class="view-cv-container">
           <a href="https://www.linkedin.com/in/christopher-lepikson/" target="_blank" class="view-cv-btn">
             <i data-lucide="linkedin" class="linkedin-icon"></i>
             Ver currículo completo
           </a>
+
+          <a href="assets/cv/ChristopherLepikson.pdf" download class="download-cv-btn">
+            <i data-lucide="download" class="download-icon"></i>
+            Baixar PDF
+          </a>
         </div>
-      </div>
     </section>
 
-
-    <!-- Seção Habilidades (cards) -->
     <section id="skills">
       <div class="container">
         <h2 class="skills-title">
@@ -286,7 +278,6 @@
 
 
         <div class="skills-grid" role="list">
-          <!-- CARD 1 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Visualização de Dados"
             data-index="0">
             <div class="skill-card-inner">
@@ -311,7 +302,6 @@
             </div>
           </div>
 
-          <!-- CARD 2 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Bancos e Fontes de Dados"
             data-index="1">
             <div class="skill-card-inner">
@@ -339,7 +329,6 @@
             </div>
           </div>
 
-          <!-- CARD 3 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Cloud" data-index="2">
             <div class="skill-card-inner">
               <div class="skill-card-face skill-card-front">
@@ -363,7 +352,6 @@
             </div>
           </div>
 
-          <!-- CARD 4 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Automação e Performance"
             data-index="3">
             <div class="skill-card-inner">
@@ -389,7 +377,6 @@
             </div>
           </div>
 
-          <!-- CARD 5 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Linguagens de Programação"
             data-index="4">
             <div class="skill-card-inner">
@@ -419,7 +406,6 @@
             </div>
           </div>
 
-          <!-- CARD 6 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="ETL e Pipeline"
             data-index="5">
             <div class="skill-card-inner">
@@ -445,7 +431,6 @@
             </div>
           </div>
 
-          <!-- CARD 7 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false"
             aria-label="Estatística e Machine Learning" data-index="6">
             <div class="skill-card-inner">
@@ -473,7 +458,6 @@
             </div>
           </div>
 
-          <!-- CARD 8 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Versionamento"
             data-index="7">
             <div class="skill-card-inner">
@@ -498,7 +482,6 @@
             </div>
           </div>
 
-          <!-- CARD 9 -->
           <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Áreas de Conhecimento"
             data-index="8">
             <div class="skill-card-inner">
@@ -527,21 +510,20 @@
             </div>
           </div>
 
-          <!-- CARD 10 -->
-          <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Línguas" data-index="9">
+          <div class="skill-card" role="button" tabindex="0" aria-pressed="false" aria-label="Idiomas" data-index="9">
             <div class="skill-card-inner">
               <div class="skill-card-face skill-card-front">
                 <div class="skill-icon" aria-hidden="true">
                   <i data-lucide="globe"></i>
                 </div>
-                <div class="skill-name">Línguas</div>
+                <div class="skill-name">Idiomas</div>
               </div>
               <div class="skill-card-face skill-card-back">
                 <div class="skill-back-header">
                   <div class="skill-icon" aria-hidden="true">
                     <i data-lucide="globe"></i>
                   </div>
-                  <div class="skill-name">Línguas</div>
+                  <div class="skill-name">Idiomas</div>
                 </div>
                 <ul class="skill-tags">
                   <li>Português <span class="level-badge level-avancado">Nativo</span></li>
@@ -555,7 +537,6 @@
       </div>
     </section>
 
-    <!-- === BRANDS (carrossel automático) === -->
     <section id="brands" aria-label="Empresas em que já trabalhei">
       <div class="container">
         <h2 class="brands-title">
@@ -584,9 +565,7 @@
         </div>
       </div>
     </section>
-    <!-- === FIM BRANDS === -->
 
-    <!-- === CONTATO (2 colunas: esquerda info / direita formulário) === -->
     <section id="contact" aria-label="Contato">
       <div class="container">
         <h2 class="contact-title">
@@ -595,7 +574,6 @@
         <p class="contact-subtitle">Fique à vontade para me chamar — respondo rápido 🙂</p>
 
         <div class="contact-grid">
-          <!-- ESQUERDA: Informações de contato -->
           <aside class="contact-info" aria-label="Informações de contato">
             <h3>Informações de contato</h3>
             <ul class="contact-list">
@@ -618,7 +596,8 @@
                 </span>
                 <div class="contact-item">
                   <span class="label">WhatsApp</span>
-                  <a href="https://wa.me/5511947088269" target="_blank" rel="noopener">+55 (11) 94708-8269</a>
+                  <a href="https://wa.me/5511947088269" target="_blank" rel="noopener noreferrer">+55 (11)
+                    94708-8269</a>
                 </div>
                 <button class="copy-btn" data-copy="+55 (11) 94708-8269" aria-label="Copiar WhatsApp">
                   <i data-lucide="copy"></i>
@@ -645,7 +624,7 @@
                 <div class="contact-item">
                   <span class="label">LinkedIn</span>
                   <a href="https://www.linkedin.com/in/christopher-lepikson/" target="_blank"
-                    rel="noopener">/in/christopher-lepikson</a>
+                    rel="noopener noreferrer">/in/christopher-lepikson</a>
                 </div>
                 <button class="copy-btn" data-copy="https://www.linkedin.com/in/christopher-lepikson/"
                   aria-label="Copiar LinkedIn">
@@ -660,7 +639,7 @@
                 <div class="contact-item">
                   <span class="label">GitHub</span>
                   <a href="https://github.com/ChristopherLepikson" target="_blank"
-                    rel="noopener">@ChristopherLepikson</a>
+                    rel="noopener noreferrer">@ChristopherLepikson</a>
                 </div>
                 <button class="copy-btn" data-copy="https://github.com/ChristopherLepikson" aria-label="Copiar GitHub">
                   <i data-lucide="copy"></i>
@@ -669,28 +648,24 @@
             </ul>
           </aside>
 
-          <!-- DIREITA: Formulário -->
-          <!-- FORM de Contato -->
           <form id="email-form" class="contact-form" novalidate>
-            <!-- Honeypot anti-spam -->
             <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
             <div class="form-row">
               <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required autocomplete="name" />
             </div>
 
             <div class="form-row">
               <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+              <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required autocomplete="email" />
             </div>
 
             <div class="form-row">
               <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso te ajudar?" required></textarea>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso te ajudar?" required autocomplete="off"></textarea>
             </div>
 
-            <!-- Checkbox: Sou uma pessoa legal -->
             <div class="form-row inline">
               <label class="checkbox" for="sou-legal">
                 <input id="sou-legal" name="sou_legal" type="checkbox" value="sim" />
@@ -707,7 +682,6 @@
         </div>
       </div>
     </section>
-    <!-- === FIM CONTATO === -->
 
   </main>
   <footer id="site-footer" aria-label="Rodapé">
@@ -732,24 +706,21 @@
     <i data-lucide="arrow-up"></i>
   </button>
 
-
-
-  <!-- Cursor foguete SVG -->
   <svg id="rocket-cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill="#B026FF" stroke="#8B1DBF" stroke-width="2" d="M32 2L40 22L32 62L24 22L32 2Z" />
     <circle cx="32" cy="25" r="6" fill="#fff" />
     <path fill="#FF6A00" opacity="0.8" d="M24 62L32 70L40 62H24Z" />
   </svg>
 
-  <!-- Botão para iniciar/parar o jogo -->
-  <button id="toggle-game-btn" style="
-  position:fixed; right:14px; top:14px; z-index:10001;
-  padding:10px 14px; border-radius:10px; border:none;
-  font:600 14px/1 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
-  background:#B026FF; color:#fff; cursor:pointer; box-shadow:0 6px 18px rgba(176,38,255,.35);
-    ">Iniciar jogo</button>
+  <button id="toggle-game-btn">Iniciar jogo</button>
 
   <script src="js/script.js"></script>
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
 </body>
 
 </html>
